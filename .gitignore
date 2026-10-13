@@ -1,0 +1,18 @@
+# EMBER data (~1.4 GB vectorized, plus the 1.7 GB archive).
+# Rebuild locally with scripts/01_get_ember.py — see the README.
+data/*
+!data/.gitkeep
+
+# Trained checkpoints and exported models (~200 MB).
+# demo/ ships a small ONNX subset instead, and that one IS committed.
+models/*
+!models/.gitkeep
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+.vscode/
+.idea/

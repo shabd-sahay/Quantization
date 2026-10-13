@@ -1,0 +1,15 @@
+# Everything needed to reproduce the pipeline (scripts/). Not installed on Streamlit Cloud.
+-r requirements.txt
+
+scikit-learn>=1.3
+lightgbm>=4.0
+torch>=2.0
+onnx>=1.15
+onnxscript>=0.1          # required by torch>=2.9 for ONNX export
+requests
+tqdm
+
+# EMBER feature vectorizer. Needs lief; ember/features.py also needs the one-line
+# FeatureHasher patch described in the README under "Reproducing from scratch".
+# pip install lief
+# pip install git+https://github.com/elastic/ember.git

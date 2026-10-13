@@ -1,0 +1,13 @@
+{
+  "n_rows": 1000,
+  "method": "supervised",
+  "seed": 42,
+  "budgets": [
+    1,
+    5,
+    10,
+    25,
+    100
+  ],
+  "note": "X_demo.npy is already scaled and clipped by src.scaler.Scaler"
+}

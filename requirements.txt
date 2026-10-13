@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+lightgbm
+torch
+onnx
+onnxruntime
+streamlit
+plotly
+requests
+tqdm
+# EMBER vectorizer (needs LIEF; install separately, see scripts/01_get_ember.py)
+# pip install git+https://github.com/elastic/ember.git

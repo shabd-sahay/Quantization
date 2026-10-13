@@ -1,0 +1,1247 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "boost_rounds": 200,
+  "st_rounds": 3,
+  "runs": [
+    {
+      "seed": 42,
+      "budget": 0.01,
+      "n_labeled": 566,
+      "supervised": {
+        "auc": 0.9362984951398056,
+        "tpr_at_1pct_fpr": 0.49957998319932795,
+        "tpr_at_0p1pct_fpr": 0.2887315492619705,
+        "valthr_1pct_fpr": 0.01832
+      },
+      "thr0.99": {
+        "auc": 0.927578097523901,
+        "tpr_at_1pct_fpr": 0.38901556062242487,
+        "tpr_at_0p1pct_fpr": 0.048081923276931074,
+        "valthr_1pct_fpr": 0.01464,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 64909,
+            "pseudo_label_acc": 0.9464822462794165
+          },
+          {
+            "round": 2,
+            "added": 82715,
+            "pseudo_label_acc": 0.8908076923076923
+          },
+          {
+            "round": 3,
+            "added": 84813,
+            "pseudo_label_acc": 0.883431552869637
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9253699627985119,
+        "tpr_at_1pct_fpr": 0.39773590943637743,
+        "tpr_at_0p1pct_fpr": 0.26305052202088086,
+        "valthr_1pct_fpr": 0.01692,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 51508,
+            "pseudo_label_acc": 0.9714127798077808
+          },
+          {
+            "round": 2,
+            "added": 76120,
+            "pseudo_label_acc": 0.9115406291093532
+          },
+          {
+            "round": 3,
+            "added": 81907,
+            "pseudo_label_acc": 0.8895184135977338
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9246478107124285,
+        "tpr_at_1pct_fpr": 0.39809592383695347,
+        "tpr_at_0p1pct_fpr": 0.2638505540221609,
+        "valthr_1pct_fpr": 0.01864,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8942,
+            "pseudo_label_acc": 0.9984110169491526
+          },
+          {
+            "round": 2,
+            "added": 17884,
+            "pseudo_label_acc": 0.9982414490459861
+          },
+          {
+            "round": 3,
+            "added": 26828,
+            "pseudo_label_acc": 0.9896460953495174
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9315471450858034,
+        "tpr_at_1pct_fpr": 0.41817672706908277,
+        "tpr_at_0p1pct_fpr": 0.045321812872514904,
+        "valthr_1pct_fpr": 0.01496,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 73955,
+            "pseudo_label_acc": 0.9215892730515504
+          },
+          {
+            "round": 2,
+            "added": 84955,
+            "pseudo_label_acc": 0.8855059149965316
+          },
+          {
+            "round": 3,
+            "added": 86316,
+            "pseudo_label_acc": 0.8798597656610389
+          }
+        ]
+      }
+    },
+    {
+      "seed": 42,
+      "budget": 0.05,
+      "n_labeled": 2834,
+      "supervised": {
+        "auc": 0.9682907988319533,
+        "tpr_at_1pct_fpr": 0.6727869114764591,
+        "tpr_at_0p1pct_fpr": 0.4626185047401896,
+        "valthr_1pct_fpr": 0.02412
+      },
+      "thr0.99": {
+        "auc": 0.9614727373094925,
+        "tpr_at_1pct_fpr": 0.579543181727269,
+        "tpr_at_0p1pct_fpr": 0.37477499099964,
+        "valthr_1pct_fpr": 0.01568,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 70408,
+            "pseudo_label_acc": 0.9711340206185567
+          },
+          {
+            "round": 2,
+            "added": 78174,
+            "pseudo_label_acc": 0.9483461244078526
+          },
+          {
+            "round": 3,
+            "added": 79931,
+            "pseudo_label_acc": 0.9404566874987359
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9616279867194688,
+        "tpr_at_1pct_fpr": 0.6177047081883276,
+        "tpr_at_0p1pct_fpr": 0.359014360574423,
+        "valthr_1pct_fpr": 0.01632,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 60232,
+            "pseudo_label_acc": 0.9878966394430312
+          },
+          {
+            "round": 2,
+            "added": 71148,
+            "pseudo_label_acc": 0.9681564752277775
+          },
+          {
+            "round": 3,
+            "added": 74131,
+            "pseudo_label_acc": 0.9571282453047811
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9646589935597424,
+        "tpr_at_1pct_fpr": 0.6589063562542502,
+        "tpr_at_0p1pct_fpr": 0.46789871594863797,
+        "valthr_1pct_fpr": 0.02356,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8716,
+            "pseudo_label_acc": 0.9998162102554677
+          },
+          {
+            "round": 2,
+            "added": 17432,
+            "pseudo_label_acc": 0.999630314232902
+          },
+          {
+            "round": 3,
+            "added": 26148,
+            "pseudo_label_acc": 0.999444821417556
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.962318737549502,
+        "tpr_at_1pct_fpr": 0.5818632745309812,
+        "tpr_at_0p1pct_fpr": 0.3732949317972719,
+        "valthr_1pct_fpr": 0.0156,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 76783,
+            "pseudo_label_acc": 0.9543417425884234
+          },
+          {
+            "round": 2,
+            "added": 81924,
+            "pseudo_label_acc": 0.9348396645288604
+          },
+          {
+            "round": 3,
+            "added": 83012,
+            "pseudo_label_acc": 0.929526147611254
+          }
+        ]
+      }
+    },
+    {
+      "seed": 42,
+      "budget": 0.1,
+      "n_labeled": 5666,
+      "supervised": {
+        "auc": 0.9759255890235609,
+        "tpr_at_1pct_fpr": 0.7399495979839193,
+        "tpr_at_0p1pct_fpr": 0.5174206968278731,
+        "valthr_1pct_fpr": 0.02016
+      },
+      "thr0.99": {
+        "auc": 0.9728466722668907,
+        "tpr_at_1pct_fpr": 0.7143485739429577,
+        "tpr_at_0p1pct_fpr": 0.3844953798151926,
+        "valthr_1pct_fpr": 0.0126,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 68352,
+            "pseudo_label_acc": 0.9816849816849816
+          },
+          {
+            "round": 2,
+            "added": 73965,
+            "pseudo_label_acc": 0.9691614227696702
+          },
+          {
+            "round": 3,
+            "added": 75546,
+            "pseudo_label_acc": 0.9642747891447799
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9743491771670867,
+        "tpr_at_1pct_fpr": 0.7272690907636306,
+        "tpr_at_0p1pct_fpr": 0.46153846153846156,
+        "valthr_1pct_fpr": 0.01544,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 57337,
+            "pseudo_label_acc": 0.994034987094924
+          },
+          {
+            "round": 2,
+            "added": 64827,
+            "pseudo_label_acc": 0.9867435304873403
+          },
+          {
+            "round": 3,
+            "added": 67117,
+            "pseudo_label_acc": 0.9827772325809617
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9739558014320573,
+        "tpr_at_1pct_fpr": 0.7229889195567822,
+        "tpr_at_0p1pct_fpr": 0.4928997159886395,
+        "valthr_1pct_fpr": 0.01908,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8432,
+            "pseudo_label_acc": 0.9988262910798122
+          },
+          {
+            "round": 2,
+            "added": 16864,
+            "pseudo_label_acc": 0.999126552795031
+          },
+          {
+            "round": 3,
+            "added": 25298,
+            "pseudo_label_acc": 0.9991569390402075
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9732889427577103,
+        "tpr_at_1pct_fpr": 0.6966278651146046,
+        "tpr_at_0p1pct_fpr": 0.3968158726349054,
+        "valthr_1pct_fpr": 0.01468,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 74486,
+            "pseudo_label_acc": 0.9686939182452642
+          },
+          {
+            "round": 2,
+            "added": 78075,
+            "pseudo_label_acc": 0.9575439783491204
+          },
+          {
+            "round": 3,
+            "added": 79122,
+            "pseudo_label_acc": 0.9532564011602429
+          }
+        ]
+      }
+    },
+    {
+      "seed": 42,
+      "budget": 0.25,
+      "n_labeled": 14166,
+      "supervised": {
+        "auc": 0.9822227593103723,
+        "tpr_at_1pct_fpr": 0.7740709628385135,
+        "tpr_at_0p1pct_fpr": 0.6021440857634306,
+        "valthr_1pct_fpr": 0.0208
+      },
+      "thr0.99": {
+        "auc": 0.9821734293371737,
+        "tpr_at_1pct_fpr": 0.781671266850674,
+        "tpr_at_0p1pct_fpr": 0.6055842233689348,
+        "valthr_1pct_fpr": 0.01876,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 56609,
+            "pseudo_label_acc": 0.9943146123884911
+          },
+          {
+            "round": 2,
+            "added": 61452,
+            "pseudo_label_acc": 0.9904088551476341
+          },
+          {
+            "round": 3,
+            "added": 62912,
+            "pseudo_label_acc": 0.9881477709889115
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9823154718188727,
+        "tpr_at_1pct_fpr": 0.7735509420376815,
+        "tpr_at_0p1pct_fpr": 0.6119044761790472,
+        "valthr_1pct_fpr": 0.01984,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 39650,
+            "pseudo_label_acc": 0.9989276618560387
+          },
+          {
+            "round": 2,
+            "added": 45206,
+            "pseudo_label_acc": 0.9977645305514158
+          },
+          {
+            "round": 3,
+            "added": 47347,
+            "pseudo_label_acc": 0.9974927964674625
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9807184959398376,
+        "tpr_at_1pct_fpr": 0.7627105084203368,
+        "tpr_at_0p1pct_fpr": 0.6036641465658626,
+        "valthr_1pct_fpr": 0.01872,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 7582,
+            "pseudo_label_acc": 0.9997659176029963
+          },
+          {
+            "round": 2,
+            "added": 15164,
+            "pseudo_label_acc": 0.999534450651769
+          },
+          {
+            "round": 3,
+            "added": 22748,
+            "pseudo_label_acc": 0.9994555071561917
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9826016160646427,
+        "tpr_at_1pct_fpr": 0.7893915756630265,
+        "tpr_at_0p1pct_fpr": 0.5934637385495419,
+        "valthr_1pct_fpr": 0.02244,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 64781,
+            "pseudo_label_acc": 0.9860943168077388
+          },
+          {
+            "round": 2,
+            "added": 67548,
+            "pseudo_label_acc": 0.9806083951138432
+          },
+          {
+            "round": 3,
+            "added": 68320,
+            "pseudo_label_acc": 0.9781985083189902
+          }
+        ]
+      }
+    },
+    {
+      "seed": 43,
+      "budget": 0.01,
+      "n_labeled": 566,
+      "supervised": {
+        "auc": 0.9283599487979519,
+        "tpr_at_1pct_fpr": 0.5104204168166727,
+        "tpr_at_0p1pct_fpr": 0.3655346213848554,
+        "valthr_1pct_fpr": 0.01788
+      },
+      "thr0.99": {
+        "auc": 0.9148301852074083,
+        "tpr_at_1pct_fpr": 0.3706148245929837,
+        "tpr_at_0p1pct_fpr": 0.25509020360814433,
+        "valthr_1pct_fpr": 0.01528,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 65754,
+            "pseudo_label_acc": 0.9424562928619724
+          },
+          {
+            "round": 2,
+            "added": 82724,
+            "pseudo_label_acc": 0.8910774799753542
+          },
+          {
+            "round": 3,
+            "added": 85107,
+            "pseudo_label_acc": 0.8813349814585909
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9089484283371334,
+        "tpr_at_1pct_fpr": 0.3769350774030961,
+        "tpr_at_0p1pct_fpr": 0.2281291251650066,
+        "valthr_1pct_fpr": 0.01468,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 52020,
+            "pseudo_label_acc": 0.9673402112203162
+          },
+          {
+            "round": 2,
+            "added": 76708,
+            "pseudo_label_acc": 0.9105579755237503
+          },
+          {
+            "round": 3,
+            "added": 82274,
+            "pseudo_label_acc": 0.8880930718751815
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9109774790991639,
+        "tpr_at_1pct_fpr": 0.4872594903796152,
+        "tpr_at_0p1pct_fpr": 0.3583343333733349,
+        "valthr_1pct_fpr": 0.01716,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8942,
+            "pseudo_label_acc": 0.9991039426523297
+          },
+          {
+            "round": 2,
+            "added": 17884,
+            "pseudo_label_acc": 0.9986585583974245
+          },
+          {
+            "round": 3,
+            "added": 26828,
+            "pseudo_label_acc": 0.9958092314956912
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9195083187327493,
+        "tpr_at_1pct_fpr": 0.42125685027401094,
+        "tpr_at_0p1pct_fpr": 0.28693147725909035,
+        "valthr_1pct_fpr": 0.01932,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 74617,
+            "pseudo_label_acc": 0.9204509131203784
+          },
+          {
+            "round": 2,
+            "added": 85329,
+            "pseudo_label_acc": 0.8844602919762536
+          },
+          {
+            "round": 3,
+            "added": 86569,
+            "pseudo_label_acc": 0.8792827291639818
+          }
+        ]
+      }
+    },
+    {
+      "seed": 43,
+      "budget": 0.05,
+      "n_labeled": 2834,
+      "supervised": {
+        "auc": 0.9640092291691668,
+        "tpr_at_1pct_fpr": 0.6771070842833713,
+        "tpr_at_0p1pct_fpr": 0.45085803432137284,
+        "valthr_1pct_fpr": 0.0134
+      },
+      "thr0.99": {
+        "auc": 0.9585103148125924,
+        "tpr_at_1pct_fpr": 0.5554222168886755,
+        "tpr_at_0p1pct_fpr": 0.31213248529941195,
+        "valthr_1pct_fpr": 0.01532,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 70418,
+            "pseudo_label_acc": 0.9697226484666651
+          },
+          {
+            "round": 2,
+            "added": 78161,
+            "pseudo_label_acc": 0.9468223623023664
+          },
+          {
+            "round": 3,
+            "added": 80067,
+            "pseudo_label_acc": 0.938932530947717
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9588464594583783,
+        "tpr_at_1pct_fpr": 0.5545421816872675,
+        "tpr_at_0p1pct_fpr": 0.3074122964918597,
+        "valthr_1pct_fpr": 0.01688,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 60668,
+            "pseudo_label_acc": 0.9854814736171568
+          },
+          {
+            "round": 2,
+            "added": 71344,
+            "pseudo_label_acc": 0.9651344201505867
+          },
+          {
+            "round": 3,
+            "added": 74245,
+            "pseudo_label_acc": 0.9559712856210573
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9605451226049042,
+        "tpr_at_1pct_fpr": 0.656466258650346,
+        "tpr_at_0p1pct_fpr": 0.3922556902276091,
+        "valthr_1pct_fpr": 0.01656,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8716,
+            "pseudo_label_acc": 0.9994513533284565
+          },
+          {
+            "round": 2,
+            "added": 17432,
+            "pseudo_label_acc": 0.9990780011063987
+          },
+          {
+            "round": 3,
+            "added": 26148,
+            "pseudo_label_acc": 0.9985946474398143
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.959871951678067,
+        "tpr_at_1pct_fpr": 0.5641025641025641,
+        "tpr_at_0p1pct_fpr": 0.33985359414376576,
+        "valthr_1pct_fpr": 0.01736,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 76727,
+            "pseudo_label_acc": 0.9522526882851792
+          },
+          {
+            "round": 2,
+            "added": 81750,
+            "pseudo_label_acc": 0.9353287012292891
+          },
+          {
+            "round": 3,
+            "added": 83035,
+            "pseudo_label_acc": 0.9287259123589814
+          }
+        ]
+      }
+    },
+    {
+      "seed": 43,
+      "budget": 0.1,
+      "n_labeled": 5666,
+      "supervised": {
+        "auc": 0.9740801880075203,
+        "tpr_at_1pct_fpr": 0.733709348373935,
+        "tpr_at_0p1pct_fpr": 0.5131405256210249,
+        "valthr_1pct_fpr": 0.01812
+      },
+      "thr0.99": {
+        "auc": 0.9731220272810912,
+        "tpr_at_1pct_fpr": 0.6788671546861874,
+        "tpr_at_0p1pct_fpr": 0.359494379775191,
+        "valthr_1pct_fpr": 0.01576,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 67536,
+            "pseudo_label_acc": 0.983856392721944
+          },
+          {
+            "round": 2,
+            "added": 73376,
+            "pseudo_label_acc": 0.9709509022996264
+          },
+          {
+            "round": 3,
+            "added": 75147,
+            "pseudo_label_acc": 0.9655702766242612
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9732812368494739,
+        "tpr_at_1pct_fpr": 0.719388775551022,
+        "tpr_at_0p1pct_fpr": 0.41397655906236247,
+        "valthr_1pct_fpr": 0.0164,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 56941,
+            "pseudo_label_acc": 0.9933805463217228
+          },
+          {
+            "round": 2,
+            "added": 64347,
+            "pseudo_label_acc": 0.9868417684253642
+          },
+          {
+            "round": 3,
+            "added": 66748,
+            "pseudo_label_acc": 0.9827547923913847
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9727646249849994,
+        "tpr_at_1pct_fpr": 0.7297091883675347,
+        "tpr_at_0p1pct_fpr": 0.49277971118844754,
+        "valthr_1pct_fpr": 0.01592,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8432,
+            "pseudo_label_acc": 1.0
+          },
+          {
+            "round": 2,
+            "added": 16864,
+            "pseudo_label_acc": 0.9997061128526645
+          },
+          {
+            "round": 3,
+            "added": 25298,
+            "pseudo_label_acc": 0.9995433492073847
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9741470650826033,
+        "tpr_at_1pct_fpr": 0.7058682347293892,
+        "tpr_at_0p1pct_fpr": 0.40393615744629785,
+        "valthr_1pct_fpr": 0.01588,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 73896,
+            "pseudo_label_acc": 0.9704897540068753
+          },
+          {
+            "round": 2,
+            "added": 77763,
+            "pseudo_label_acc": 0.9597068819031436
+          },
+          {
+            "round": 3,
+            "added": 78891,
+            "pseudo_label_acc": 0.9557212575665542
+          }
+        ]
+      }
+    },
+    {
+      "seed": 43,
+      "budget": 0.25,
+      "n_labeled": 14166,
+      "supervised": {
+        "auc": 0.9825035993439737,
+        "tpr_at_1pct_fpr": 0.81251250050002,
+        "tpr_at_0p1pct_fpr": 0.5370214808592344,
+        "valthr_1pct_fpr": 0.0176
+      },
+      "thr0.99": {
+        "auc": 0.9811232449297972,
+        "tpr_at_1pct_fpr": 0.7905916236649466,
+        "tpr_at_0p1pct_fpr": 0.500420016800672,
+        "valthr_1pct_fpr": 0.01968,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 57215,
+            "pseudo_label_acc": 0.993662431265339
+          },
+          {
+            "round": 2,
+            "added": 62003,
+            "pseudo_label_acc": 0.9885337537623621
+          },
+          {
+            "round": 3,
+            "added": 63470,
+            "pseudo_label_acc": 0.9863861732821647
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9800227393095723,
+        "tpr_at_1pct_fpr": 0.7846313852554102,
+        "tpr_at_0p1pct_fpr": 0.5501820072802912,
+        "valthr_1pct_fpr": 0.01956,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 40402,
+            "pseudo_label_acc": 0.9983696849526328
+          },
+          {
+            "round": 2,
+            "added": 46158,
+            "pseudo_label_acc": 0.9969968813768144
+          },
+          {
+            "round": 3,
+            "added": 48414,
+            "pseudo_label_acc": 0.9967679142028134
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9815927645105804,
+        "tpr_at_1pct_fpr": 0.8015120604824193,
+        "tpr_at_0p1pct_fpr": 0.5509020360814433,
+        "valthr_1pct_fpr": 0.01348,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 7582,
+            "pseudo_label_acc": 0.9997627520759194
+          },
+          {
+            "round": 2,
+            "added": 15164,
+            "pseudo_label_acc": 0.9997639282341831
+          },
+          {
+            "round": 3,
+            "added": 22748,
+            "pseudo_label_acc": 0.9996098626716604
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9823884203368133,
+        "tpr_at_1pct_fpr": 0.7971118844753791,
+        "tpr_at_0p1pct_fpr": 0.5053402136085443,
+        "valthr_1pct_fpr": 0.01764,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 65187,
+            "pseudo_label_acc": 0.9844206160814166
+          },
+          {
+            "round": 2,
+            "added": 67870,
+            "pseudo_label_acc": 0.97939063401332
+          },
+          {
+            "round": 3,
+            "added": 68689,
+            "pseudo_label_acc": 0.9765971232344175
+          }
+        ]
+      }
+    },
+    {
+      "seed": 44,
+      "budget": 0.01,
+      "n_labeled": 566,
+      "supervised": {
+        "auc": 0.9192265434617385,
+        "tpr_at_1pct_fpr": 0.33317332693307733,
+        "tpr_at_0p1pct_fpr": 0.21492859714388576,
+        "valthr_1pct_fpr": 0.01632
+      },
+      "thr0.99": {
+        "auc": 0.9115910652426099,
+        "tpr_at_1pct_fpr": 0.28113124524981,
+        "tpr_at_0p1pct_fpr": 0.0029601184047361893,
+        "valthr_1pct_fpr": 0.0168,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 64869,
+            "pseudo_label_acc": 0.9384305933720901
+          },
+          {
+            "round": 2,
+            "added": 81492,
+            "pseudo_label_acc": 0.8922664894240919
+          },
+          {
+            "round": 3,
+            "added": 83805,
+            "pseudo_label_acc": 0.8819950181590006
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9104785855434218,
+        "tpr_at_1pct_fpr": 0.24564982599303972,
+        "tpr_at_0p1pct_fpr": 0.19296771870874835,
+        "valthr_1pct_fpr": 0.01648,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 51753,
+            "pseudo_label_acc": 0.9602979194878739
+          },
+          {
+            "round": 2,
+            "added": 74851,
+            "pseudo_label_acc": 0.9104091034541324
+          },
+          {
+            "round": 3,
+            "added": 80096,
+            "pseudo_label_acc": 0.8929775838127356
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9016438905556221,
+        "tpr_at_1pct_fpr": 0.3029721188847554,
+        "tpr_at_0p1pct_fpr": 0.2059282371294852,
+        "valthr_1pct_fpr": 0.01616,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8942,
+            "pseudo_label_acc": 0.9978563772775991
+          },
+          {
+            "round": 2,
+            "added": 17884,
+            "pseudo_label_acc": 0.9832166576916173
+          },
+          {
+            "round": 3,
+            "added": 26828,
+            "pseudo_label_acc": 0.9793992953961904
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9146311452458098,
+        "tpr_at_1pct_fpr": 0.2608904356174247,
+        "tpr_at_0p1pct_fpr": 0.19568782751310052,
+        "valthr_1pct_fpr": 0.01456,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 73835,
+            "pseudo_label_acc": 0.9178616027214399
+          },
+          {
+            "round": 2,
+            "added": 84314,
+            "pseudo_label_acc": 0.884715711477393
+          },
+          {
+            "round": 3,
+            "added": 85661,
+            "pseudo_label_acc": 0.8785719601131121
+          }
+        ]
+      }
+    },
+    {
+      "seed": 44,
+      "budget": 0.05,
+      "n_labeled": 2834,
+      "supervised": {
+        "auc": 0.9617889547581904,
+        "tpr_at_1pct_fpr": 0.6058242329693188,
+        "tpr_at_0p1pct_fpr": 0.4171366854674187,
+        "valthr_1pct_fpr": 0.01772
+      },
+      "thr0.99": {
+        "auc": 0.9557507420296811,
+        "tpr_at_1pct_fpr": 0.4948597943917757,
+        "tpr_at_0p1pct_fpr": 0.29945197807912316,
+        "valthr_1pct_fpr": 0.0156,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 70786,
+            "pseudo_label_acc": 0.9652403977739258
+          },
+          {
+            "round": 2,
+            "added": 78503,
+            "pseudo_label_acc": 0.9411219763252702
+          },
+          {
+            "round": 3,
+            "added": 80332,
+            "pseudo_label_acc": 0.9330918603481235
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9566452898115925,
+        "tpr_at_1pct_fpr": 0.5211408456338253,
+        "tpr_at_0p1pct_fpr": 0.31729269170766833,
+        "valthr_1pct_fpr": 0.01528,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 60983,
+            "pseudo_label_acc": 0.981460451604384
+          },
+          {
+            "round": 2,
+            "added": 71716,
+            "pseudo_label_acc": 0.9604004949938125
+          },
+          {
+            "round": 3,
+            "added": 74502,
+            "pseudo_label_acc": 0.9522550443206692
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9578572534901396,
+        "tpr_at_1pct_fpr": 0.6003440137605505,
+        "tpr_at_0p1pct_fpr": 0.3984159366374655,
+        "valthr_1pct_fpr": 0.0176,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8716,
+            "pseudo_label_acc": 0.9998158040154724
+          },
+          {
+            "round": 2,
+            "added": 17432,
+            "pseudo_label_acc": 0.9987044234684435
+          },
+          {
+            "round": 3,
+            "added": 26148,
+            "pseudo_label_acc": 0.9977836606538201
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9575346941877676,
+        "tpr_at_1pct_fpr": 0.5095003800152006,
+        "tpr_at_0p1pct_fpr": 0.2877715108604344,
+        "valthr_1pct_fpr": 0.01736,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 76887,
+            "pseudo_label_acc": 0.9471449887564887
+          },
+          {
+            "round": 2,
+            "added": 81914,
+            "pseudo_label_acc": 0.9296603475513429
+          },
+          {
+            "round": 3,
+            "added": 82965,
+            "pseudo_label_acc": 0.9253649884022377
+          }
+        ]
+      }
+    },
+    {
+      "seed": 44,
+      "budget": 0.1,
+      "n_labeled": 5666,
+      "supervised": {
+        "auc": 0.9772492699707989,
+        "tpr_at_1pct_fpr": 0.7317092683707348,
+        "tpr_at_0p1pct_fpr": 0.547381895275811,
+        "valthr_1pct_fpr": 0.01644
+      },
+      "thr0.99": {
+        "auc": 0.973126214648586,
+        "tpr_at_1pct_fpr": 0.6679867194687787,
+        "tpr_at_0p1pct_fpr": 0.4109364374574983,
+        "valthr_1pct_fpr": 0.01852,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 68425,
+            "pseudo_label_acc": 0.982201856987821
+          },
+          {
+            "round": 2,
+            "added": 74181,
+            "pseudo_label_acc": 0.9687458290697157
+          },
+          {
+            "round": 3,
+            "added": 75736,
+            "pseudo_label_acc": 0.9616163816577715
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9735630001200049,
+        "tpr_at_1pct_fpr": 0.7141085643425737,
+        "tpr_at_0p1pct_fpr": 0.41593663746549864,
+        "valthr_1pct_fpr": 0.0184,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 57479,
+            "pseudo_label_acc": 0.9926133760879523
+          },
+          {
+            "round": 2,
+            "added": 65341,
+            "pseudo_label_acc": 0.985458302880617
+          },
+          {
+            "round": 3,
+            "added": 67799,
+            "pseudo_label_acc": 0.9815431753519928
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9735349045961839,
+        "tpr_at_1pct_fpr": 0.704388175527021,
+        "tpr_at_0p1pct_fpr": 0.45993839753590143,
+        "valthr_1pct_fpr": 0.0172,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 8432,
+            "pseudo_label_acc": 1.0
+          },
+          {
+            "round": 2,
+            "added": 16864,
+            "pseudo_label_acc": 0.9998031689794311
+          },
+          {
+            "round": 3,
+            "added": 25298,
+            "pseudo_label_acc": 0.9990878884617891
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9734544709788391,
+        "tpr_at_1pct_fpr": 0.6874674986999479,
+        "tpr_at_0p1pct_fpr": 0.3860154406176247,
+        "valthr_1pct_fpr": 0.01596,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 74567,
+            "pseudo_label_acc": 0.9683810197673904
+          },
+          {
+            "round": 2,
+            "added": 78234,
+            "pseudo_label_acc": 0.9542013705851344
+          },
+          {
+            "round": 3,
+            "added": 79334,
+            "pseudo_label_acc": 0.9494331773270931
+          }
+        ]
+      }
+    },
+    {
+      "seed": 44,
+      "budget": 0.25,
+      "n_labeled": 14166,
+      "supervised": {
+        "auc": 0.9829323868954758,
+        "tpr_at_1pct_fpr": 0.797031881275251,
+        "tpr_at_0p1pct_fpr": 0.5761430457218288,
+        "valthr_1pct_fpr": 0.01696
+      },
+      "thr0.99": {
+        "auc": 0.9818588615544621,
+        "tpr_at_1pct_fpr": 0.781671266850674,
+        "tpr_at_0p1pct_fpr": 0.5232609304372174,
+        "valthr_1pct_fpr": 0.01844,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 57022,
+            "pseudo_label_acc": 0.9937646141855028
+          },
+          {
+            "round": 2,
+            "added": 62000,
+            "pseudo_label_acc": 0.9891637760513717
+          },
+          {
+            "round": 3,
+            "added": 63390,
+            "pseudo_label_acc": 0.9869096005606167
+          }
+        ]
+      },
+      "thr0.999": {
+        "auc": 0.9819989927597104,
+        "tpr_at_1pct_fpr": 0.7689507580303212,
+        "tpr_at_0p1pct_fpr": 0.5949437977519101,
+        "valthr_1pct_fpr": 0.01824,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 39916,
+            "pseudo_label_acc": 0.9983590562355863
+          },
+          {
+            "round": 2,
+            "added": 45500,
+            "pseudo_label_acc": 0.9973917782622236
+          },
+          {
+            "round": 3,
+            "added": 47684,
+            "pseudo_label_acc": 0.9971350969230197
+          }
+        ]
+      },
+      "topk10": {
+        "auc": 0.9831666562662507,
+        "tpr_at_1pct_fpr": 0.7833513340533621,
+        "tpr_at_0p1pct_fpr": 0.5810632425297012,
+        "valthr_1pct_fpr": 0.01756,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 7582,
+            "pseudo_label_acc": 1.0
+          },
+          {
+            "round": 2,
+            "added": 15164,
+            "pseudo_label_acc": 0.9997673065735893
+          },
+          {
+            "round": 3,
+            "added": 22748,
+            "pseudo_label_acc": 0.9994563951230877
+          }
+        ]
+      },
+      "weighted0.2": {
+        "auc": 0.9828167574702988,
+        "tpr_at_1pct_fpr": 0.7939517580703228,
+        "tpr_at_0p1pct_fpr": 0.5503820152806113,
+        "valthr_1pct_fpr": 0.01556,
+        "rounds": [
+          {
+            "round": 1,
+            "added": 64966,
+            "pseudo_label_acc": 0.9854290487798197
+          },
+          {
+            "round": 2,
+            "added": 67761,
+            "pseudo_label_acc": 0.9795591287669794
+          },
+          {
+            "round": 3,
+            "added": 68465,
+            "pseudo_label_acc": 0.9776806617761823
+          }
+        ]
+      }
+    }
+  ]
+}
