@@ -9,9 +9,9 @@ ROOT = Path(__file__).resolve().parents[2]
 st.set_page_config(page_title="Data handling", layout="wide")
 st.title("1 · Handling an incomplete dataset")
 
-log_p = ROOT / "data/processed/pipeline_log.json"
+log_p = ROOT / "results/pipeline_log.json"
 if not log_p.exists():
-    st.error("Missing data/processed/pipeline_log.json — run scripts/02_prepare_data.py"); st.stop()
+    st.error("Missing results/pipeline_log.json — run scripts/02_prepare_data.py"); st.stop()
 log = json.loads(log_p.read_text())
 
 st.subheader("Every row that leaves the pipeline, and why")

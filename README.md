@@ -8,7 +8,7 @@ Static Windows PE malware detection on **EMBER2018**, built around two questions
 
 Everything below is measured, including the parts that did not work.
 
-**[Live demo](#)** · three pages: data handling, training under label scarcity, quantization.
+**[Live demo](https://ember-quantization.streamlit.app)** · three pages: data handling, training under label scarcity, quantization.
 
 ---
 

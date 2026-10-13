@@ -1,0 +1,90 @@
+{
+  "seed": 42,
+  "steps": [
+    {
+      "stage": "Drop duplicate file hashes",
+      "rows_in": 99999,
+      "rows_out": 99999,
+      "removed": 0,
+      "note": "same sha256 = same file"
+    },
+    {
+      "stage": "Drop duplicate feature vectors",
+      "rows_in": 99999,
+      "rows_out": 99995,
+      "removed": 4,
+      "note": "identical 2381-dim vectors add no information"
+    },
+    {
+      "stage": "Drop test rows that also appear in train",
+      "rows_in": 50000,
+      "rows_out": 49999,
+      "removed": 1,
+      "note": "prevents train/test leakage"
+    },
+    {
+      "stage": "Set aside truly unlabeled pool (-1)",
+      "rows_in": 99995,
+      "rows_out": 66664,
+      "removed": 33331,
+      "note": "33331 rows have no label at all; kept for semi-supervised use"
+    },
+    {
+      "stage": "Hold out validation set",
+      "rows_in": 66664,
+      "rows_out": 56664,
+      "removed": 10000,
+      "note": "10000 labeled rows reserved for tuning/thresholds"
+    },
+    {
+      "stage": "Mask labels per budget",
+      "rows_in": 56664,
+      "rows_out": 56664,
+      "removed": 0,
+      "note": "see 'budgets': labels hidden, true values kept only for scoring pseudo-labels"
+    }
+  ],
+  "budgets": [
+    {
+      "budget": 0.01,
+      "labeled": 566,
+      "hidden_labels": 56098,
+      "truly_unlabeled": 33331,
+      "total_unlabeled": 89429
+    },
+    {
+      "budget": 0.05,
+      "labeled": 2834,
+      "hidden_labels": 53830,
+      "truly_unlabeled": 33331,
+      "total_unlabeled": 87161
+    },
+    {
+      "budget": 0.1,
+      "labeled": 5666,
+      "hidden_labels": 50998,
+      "truly_unlabeled": 33331,
+      "total_unlabeled": 84329
+    },
+    {
+      "budget": 0.25,
+      "labeled": 14166,
+      "hidden_labels": 42498,
+      "truly_unlabeled": 33331,
+      "total_unlabeled": 75829
+    },
+    {
+      "budget": 1.0,
+      "labeled": 56664,
+      "hidden_labels": 0,
+      "truly_unlabeled": 33331,
+      "total_unlabeled": 33331
+    }
+  ],
+  "final": {
+    "train_labeled_pool": 56664,
+    "val": 10000,
+    "unlabeled_true": 33331,
+    "test": 49999
+  }
+}

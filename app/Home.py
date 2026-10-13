@@ -25,7 +25,7 @@ Three questions this demo answers, one per page:
 
 st.subheader("Status")
 need = {
-    "data/processed/pipeline_log.json": "page 1 (data handling)",
+    "results/pipeline_log.json": "page 1 (data handling)",
     "results/ssl_results.json": "page 2 (LightGBM baseline)",
     "results/mlp_results.json": "page 2 (MLP label-budget curve)",
     "results/quant_results.json": "page 3 (quantization)",
